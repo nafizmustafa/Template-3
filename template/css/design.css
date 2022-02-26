@@ -1,0 +1,198 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    body {
+        line-height: 1.8;
+        color: aliceblue;
+        font-size: 15px;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgb(31, 31, 39);
+    }
+    
+    .title-sm {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    a {
+        font-weight: 700;
+        transition: all 0.4s ease;
+    }
+    
+    p {
+        color: #443a3a;
+    }
+    
+    small {
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    
+    section {
+        padding-top: 75px;
+    }
+    /* Navigation section*/
+    
+    .logo-text {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: rgb(49, 42, 42) !important;
+    }
+    
+    .navbar {
+        border-bottom: 1px solid rgb(87, 84, 84);
+    }
+    
+    .navbar .nav-link {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .navbar-nav .nav-item .nav-link.active {
+        color: brown;
+    }
+    /* Home Section*/
+    
+    #home {
+        background: linear-gradient(#00000070, #00000070), linear-gradient(#00000070, #00000070), url(../img/img.jpg);
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+    }
+    
+    #home h1 {
+        font-weight: 700;
+    }
+    
+    #home p {
+        max-width: 550px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        border-radius: 0px;
+        letter-spacing: 1px;
+    }
+    
+    .btn-brand {
+        background: crimson;
+        color: white;
+    }
+    
+    .btn-brand:hover {
+        background: rgb(126, 107, 107);
+        color: black
+    }
+    /* Service Section*/
+    
+    .serviceIntro {
+        text-align: center;
+    }
+    
+    .serviceIntro .hline {
+        width: 150px;
+        height: 2px;
+        background: rgb(68, 66, 66);
+        margin: -1px auto 15px auto;
+        box-shadow: 1px 4px 8px 0px black;
+    }
+    
+    .ServiceItemGrip {
+        margin: 4px;
+        padding: 5px;
+    }
+    
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        background: rgb(228, 159, 69);
+        color: rgb(34, 41, 41);
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin: 10px auto 10px auto;
+        flex: none;
+    }
+    /* portfolio section */
+    
+    .portfolio-item {
+        overflow: hidden;
+        position: relative;
+        margin-top: 10px;
+    }
+    
+    .portfolio-item img {
+        width: 100%;
+    }
+    
+    .portfolio-item img,
+    .portfolio-item .portfolio-overlay {
+        transition: all 0.5s ease;
+    }
+    
+    .portfolio-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(23, 23, 24, 0.438);
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        opacity: 0;
+    }
+    
+    .portfolio-overlay h3,
+    .portfolio-overlay h6 {
+        color: white;
+    }
+    
+    .portfolio-item:hover .portfolio-overlay {
+        opacity: 1;
+    }
+    
+    .portfolio-item:hover img {
+        transform: scale(1.1);
+    }
+    /* Feature*/
+    
+    .Feature .icon-box {
+        width: 30px;
+        height: 30px;
+        border-radius: 100px;
+    }
+    /* Contact*/
+    
+    #contact img {
+        width: 100%;
+    }
+    
+    .email,
+    .pass {
+        font-size: 12px;
+    }
+    
+    .footerP {
+        font-size: 25px;
+    }
